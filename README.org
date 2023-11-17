@@ -32,6 +32,6 @@ There's a slight delay after the new tab gets dumped into a new window
 and the address bar gets defocused so you have to wait a bit and press
 Ctrl-L. Need to find a solution for this.
 
-* License
+** License
 
 WTFPL
