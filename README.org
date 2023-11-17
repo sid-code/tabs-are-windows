@@ -12,9 +12,11 @@ this:
 
 1. Make sure you're on Firefox Nightly or Developer Edition so that
    you can install spooky unsigned add-ons.
-2. Build the zip file with
+2. Open up [[about:config][about:config]] and set ~xpinstall.signatures.required~ to
+   false. (Maybe restart Firefox for good measure.)
+3. Build the zip file with
    ~nix build && cp result /tmp/tabs-are-windows-ext.zip~
-3. Open up [[about:addons][about:addons]] and click the little settings button across
+4. Open up [[about:addons][about:addons]] and click the little settings button across
    "Manage Your Extensions", select "Install Add-on From File" and
    select ~/tmp/tabs-are-windows-ext.zip~.
 
