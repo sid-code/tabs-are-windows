@@ -1,0 +1,35 @@
+* Tabs are Windows
+
+Tabs are windows. Let my window manager manage them.
+
+This is a minimal extension for Firefox to force all tabs into new
+windows. It has zero settings.
+
+** How to use this
+
+If this extension isn't available via [[https://addons.mozilla.org][AMO]], it can be installed like
+this:
+
+1. Make sure you're on Firefox Nightly or Developer Edition so that
+   you can install spooky unsigned add-ons.
+2. Build the zip file with
+   ~nix build && cp result /tmp/tabs-are-windows-ext.zip~
+3. Open up [[about:addons][about:addons]] and click the little settings button across
+   "Manage Your Extensions", select "Install Add-on From File" and
+   select ~/tmp/tabs-are-windows-ext.zip~.
+
+and boom
+
+all tabs will be windows now.
+
+** Known issues
+
+*** Opening a new tab is annoying
+
+There's a slight delay after the new tab gets dumped into a new window
+and the address bar gets defocused so you have to wait a bit and press
+Ctrl-L. Need to find a solution for this.
+
+* License
+
+WTFPL
